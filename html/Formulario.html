@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        .logo-formulario {
+            -webkit-mask-image:
+                linear-gradient(to top, transparent 0%, black 20%, black 80%, transparent 100%),
+                linear-gradient(to left, transparent 0%, black 20%, black 80%, transparent 100%);
+            -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+        }
+    </style>
+</head>
+
+<body>
+
+   <div class="row" id="header">
+        <div class="col-2 logo bg-light text-center" id="logo">
+            <img src="/img/logo-pagina.png"alt="Logo de usuario" class="img-fluid">
+        </div>
+        <div class="col-10 bg-info" id="bg-info">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+                <div class="container-fluid">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/Formulario.html">Formulario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/Modelos.html">Modelos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/historia.html">Historia</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar autos" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container p-5 mt-4" style="background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #ff1c1c);
+; border-radius: 20px;">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="../img/logo-pagina.png" alt="logo" class="img-fluid logo-formulario" width="200px"">
+            </div>
+
+            <h1 class=" text-center text-light"> Formulario de registro</h1>
+                <p class="text-center text-light">Por favor, completa el siguiente formulario para registrarte.</p>
+                <hr class="mb-3 bg-light" style="height: 2px; border-radius: 5px;">
+            </div>
+
+            <form class="row g-3 text-white">
+                <div class="col-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email">
+                </div>
+
+                <div class="col-6">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="password">
+                </div>
+
+                <div class="col-12">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Cra. 47h # 78-45">
+                </div>
+
+                <div class="col-6">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad" placeholder="Medellín">
+                </div>
+
+                <div class="col-4">
+                    <label for="departamento" class="form-label">Departamento</label>
+                    <select class="form-select" id="departamento">
+                        <option selected>Seleccione un departamento</option>
+                        <option value="1">Antioquia</option>
+                        <option value="2">Córdoba</option>
+                        <option value="3">Sucre</option>
+                        <option value="4">Cesar</option>
+                    </select>
+                </div>
+
+                <div class="col-2">
+                    <label for="codigoPostal" class="form-label">Código Postal</label>
+                    <input type="text" class="form-control" id="codigoPostal" placeholder="Código Postal">
+                </div>
+
+                <div class="col-12">
+                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" rows="4"
+                        placeholder="Escribe tus comentarios aquí..."></textarea>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="terminos">
+                        <label class="form-check-label" for="terminos">Aceptas los términos y condiciones</label>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-light">Enviar</button>
+                    <button type="reset" class="btn btn-danger">Limpiar</button>
+                </div>
+            </form>
+        </div>
+          <footer class="text-center py-4 border-top border-secondary">
+    <p class="mb-1">© 2025 Velozía</p>
+    <small>Diseño futurista &amp; experiencia inmersiva</small>
+  </footer>
+</body>
+
+</html>

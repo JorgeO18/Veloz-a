@@ -1,0 +1,106 @@
+ /* Tipografía y básicos */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Neon glow para logo y textos */
+.neon-text {
+  color: #ff1a1a;
+  text-shadow:
+    0 0 5px #ff1a1a,
+    0 0 10px #ff1a1a,
+    0 0 20px #ff0000,
+    0 0 30px #ff0000;
+}
+.neon-text-sm {
+  color: #ff4d4d;
+  text-shadow: 0 0 4px #ff4d4d, 0 0 8px #ff4d4d;
+}
+
+.logo-neon {
+  width: 120px;/*movimiento del logo**********************/
+  animation: pulse 2s infinite ease-in-out;
+  filter: drop-shadow(0 0 10px #ff1a1a);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%,100% { transform: scale(1); }/*movimiento del logo***********************************/
+  50% { transform: scale(1.1); }
+}
+
+/* Efecto neon-card */
+.neon-card {
+  transition: transform .3s;
+}
+.neon-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff0000;
+}
+
+/* Hero */
+.hero {
+  height: 60vh;
+  background: 
+    url('../img/fondo-futurista.jpg') center/cover no-repeat,
+    rgba(0,0,0,0.6);
+  background-blend-mode: overlay;
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #555;
+  transform: translateX(-50%);
+}
+.timeline li {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+}
+.timeline li:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+.timeline li:nth-child(even) {
+  left: 50%;
+}
+.timeline span {
+  display: inline-block;
+  background: #ff1a1a;
+  padding: .3rem .6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+.timeline li p {
+  margin: 0;
+  background: rgba(255, 26, 26, 0.1);
+  display: inline-block;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  .timeline::before { left: 2px; }
+  .timeline li {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 3rem;
+  }
+}
