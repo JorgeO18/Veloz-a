@@ -10,15 +10,11 @@ h1, h2, h3 {
 /* Neon glow para logo y textos */
 .neon-text {
   color: #ff1a1a;
-  text-shadow:
-    0 0 5px #ff1a1a,
-    0 0 10px #ff1a1a,
-    0 0 20px #ff0000,
-    0 0 30px #ff0000;
+  text-shadow: 1px 1px 20px #a7a7a7;
 }
 .neon-text-sm {
   color: #ff4d4d;
-  text-shadow: 0 0 4px #ff4d4d, 0 0 8px #ff4d4d;
+  text-shadow: 1px 1px 4px #ff4d4df0;
 }
 
 .logo-neon {
@@ -93,7 +89,9 @@ h1, h2, h3 {
   padding: .5rem 1rem;
   border-radius: 4px;
 }
-
+.text-danger{
+  text-shadow: 1px 1px 4px #a7a7a7;
+}
 /* Responsivo */
 @media (max-width: 767px) {
   .timeline::before { left: 2px; }
