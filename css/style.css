@@ -65,7 +65,7 @@
 /* --- Fondo general con imagen y superposición oscura para mejor contraste --- */
 body {
     position: relative;
-    background-image: url('/img/photo-1677552929439-082dabf4e88f.jpg');
+    background-image: url('../img/photo-1677552929439-082dabf4e88f.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
